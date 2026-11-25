@@ -25,7 +25,7 @@ Create a course working directory somewhere convenient, for example your home di
 mkdir  ~/IIIF4Research
 cd ~/IIIF4Research
 curl -o pyproject.toml \
-https://raw.githubusercontent.com/4TUResearchData-Carpentries/interoperability-climate-sciences/main/learners/files/pyproject.toml
+https://raw.githubusercontent.com/4TUResearchData-Carpentries/IIIF_hands_on_session_AMOLF_2026/refs/heads/main/iiif_uv_workshop/pyproject.toml
 ```
 
 The `pyproject.toml` file defines the Python dependencies required for this course.
