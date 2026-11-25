@@ -1,0 +1,9 @@
+iiif_uv_workshop/.venv
+iiif_uv_workshop/.ipynb_checkpoints
+iiif_uv_workshop/.python-version
+
+__pycache__/
+
+iiif-quarto-deck/_site
+iiif-quarto-deck/.quarto
+iiif-quarto-deck/index_files

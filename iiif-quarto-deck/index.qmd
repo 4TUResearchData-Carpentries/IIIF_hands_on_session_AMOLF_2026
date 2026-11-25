@@ -1,0 +1,41 @@
+---
+pagetitle: "Make your scientific image datasets easier to view, compare, cite and reuse with IIIF"
+lang: en
+format:
+  html: 
+    theme: [default, styles.scss]
+execute:
+  echo: false
+---
+
+<!-- {{< include slides/00-cover.qmd >}}
+
+{{< include slides/01-why-iiif.qmd >}}
+
+{{< include slides/02-what-is-iiif.qmd >}}
+
+{{< include slides/03-two-apis.qmd >}}
+
+<!-- {{< include slides/04-what-4tu-provides.qmd >}} -->
+
+<!-- {{< include slides/05-what-is-manifest.qmd >}} -->
+
+<!-- {{< include slides/06-research-examples.qmd >}}
+
+{{< include slides/07-from-manifest-to-viewer.qmd >}}
+
+{{< include slides/08-what-manifest-enables.qmd >}}
+
+{{< include slides/09-iiif-tool-ecosystem.qmd >}}
+
+{{< include slides/10-benefits.qmd >}}
+
+{{< include slides/11-when-useful.qmd >}}
+
+{{< include slides/12-requirements.qmd >}}
+
+{{< include slides/13-good-practices.qmd >}}
+
+{{< include slides/14-what-iiif-does-not-do.qmd >}}
+
+{{< include slides/15-questions.qmd >}} --> -->

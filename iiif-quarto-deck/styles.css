@@ -1,0 +1,198 @@
+/* ============================================================
+   4TU.ResearchData-inspired Quarto RevealJS theme for IIIF
+   Based on the colours supplied from the 4TU web stylesheet.
+   Keep typography and diagrams light, with minimal boxed content.
+   ============================================================ */
+:root {
+  --tu-orange: #f49120;
+  --tu-orange-dark: #e46b16;
+  --tu-link: #FF6829;
+  --tu-pale: #fff6eb;
+  --tu-ink: #222222;
+  --tu-muted: #656565;
+  --tu-rule: #dfdfdf;
+  --r-main-font: "Source Sans 3", "Source Sans Pro", "Segoe UI", Arial, sans-serif;
+  --r-heading-font: "Source Sans 3", "Source Sans Pro", "Segoe UI", Arial, sans-serif;
+  --r-main-color: var(--tu-ink);
+  --r-heading-color: var(--tu-ink);
+  --r-link-color: var(--tu-link);
+  --r-link-color-hover: #cc4e14;
+  --r-background-color: #ffffff;
+  --r-main-font-size: 29px;
+  --r-heading-text-transform: none;
+  --r-heading-font-weight: 680;
+}
+
+.reveal { font-size: 29px; line-height: 1.28; }
+.reveal .slides { text-align: left; }
+.reveal .slides section { box-sizing: border-box; padding: 35px 54px 45px; }
+.reveal h2 { font-size: 1.66em; font-weight: 720; line-height: 1.07;
+  border-left: 7px solid var(--tu-orange); padding-left: 17px;
+  margin: 0 0 0.9em; letter-spacing: -0.015em; }
+.reveal h3 { font-size: 1.12em; margin: 0.26em 0 0.34em; font-weight: 700; }
+.reveal p { margin: 0.55em 0; }
+.reveal strong { font-weight: 740; }
+.reveal a { color: var(--tu-link); text-decoration: none; border-bottom: 1px solid #ffd2bd; }
+.reveal a:hover { color: #bb4518; border-color: currentColor; }
+.reveal ul { display: block; margin: .35em 0 .4em 1.2em; }
+.reveal li { padding-left: .06em; margin: .26em 0; }
+.reveal li::marker { color: var(--tu-orange); }
+.reveal .footer { color: #777; font-size: 14px; }
+.reveal .slide-number { color: #777; background: transparent; font-size: 16px; }
+.reveal .progress { height: 4px; color: var(--tu-orange); }
+.reveal .controls { color: var(--tu-orange); }
+.reveal .small-note { color: var(--tu-muted); font-size: .65em; margin-top: 1.1em; }
+.reveal .bottom-line { border-top: 2px solid #f3dac4; margin-top: 1.3em;
+  padding-top: .62em; color: #3b3b3b; font-size: .8em; }
+.reveal .lead { font-size: 1.12em; line-height: 1.28; max-width: 1070px; margin: .1em 0 1.25em; }
+.reveal .overline, .reveal .eyebrow { color: var(--tu-orange-dark); font-weight: 750;
+  font-size: .58em; letter-spacing: .11em; text-transform: uppercase; }
+.reveal .muted, .reveal .tiny { color: var(--tu-muted); }
+.reveal .tiny { font-size: .64em; }
+.reveal .accent { color: var(--tu-orange-dark); }
+
+/* Cover */
+.reveal .slides section:has(> h2.cover-slide) { background: linear-gradient(120deg, #fffaf3 0%, #fff 72%); }
+.reveal h2.cover-slide { font-size: 1.9em; max-width: 850px; margin: .75em 0 .55em;
+  border: 0; padding-left: 0; }
+.reveal .cover-heading { font-size: 1.17em; max-width: 990px; line-height: 1.42; }
+.reveal .cover-heading p { margin: .15em 0 .45em; }
+.reveal .cover-subtitle { font-size: .76em; color: var(--tu-muted); margin-top: 1.2em; }
+.reveal .cover-mark { position: absolute; right: 74px; bottom: 88px; font-size: 4.7em;
+  color: #f4912026; font-weight: 850; letter-spacing: -.06em; z-index: -1; }
+
+/* Download-versus-view comparison */
+.reveal .compare-flow { display: grid; grid-template-columns: 1fr 58px 1fr; gap: 10px;
+  margin: 1.05em 0 .3em; align-items: center; }
+.reveal .compare-side { border-top: 5px solid #dedede; padding: .7em .55em .25em 0; min-height: 260px; }
+.reveal .compare-highlight { border-top-color: var(--tu-orange); }
+.reveal .compare-side h3 { font-size: 1.25em; }
+.reveal .compare-divider { text-align: center; color: var(--tu-orange); font-size: 2em; }
+.reveal .compare-side ul { font-size: .78em; line-height: 1.45; }
+
+/* Questions */
+.reveal .definition { font-size: .95em; max-width: 1100px; line-height: 1.38; }
+.reveal .question-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 19px 35px; margin-top: 1.1em; }
+.reveal .question-item { border-top: 1px solid var(--tu-rule); padding-top: 12px; font-size: .83em; }
+.reveal .question-number { display: block; color: var(--tu-orange-dark); font-size: .7em;
+  font-weight: 750; letter-spacing: .06em; margin-bottom: 5px; }
+
+/* Two APIs */
+.reveal .api-pair { display:grid; grid-template-columns: 1fr 48px 1fr; align-items: stretch; gap: 15px;
+  margin-top: 1.5em; }
+.reveal .api-column { border-top: 6px solid var(--tu-orange); padding: .65em .55em .25em 0; }
+.reveal .api-column p { min-height: 80px; font-size: .85em; }
+.reveal .api-join { align-self: center; text-align: center; color: var(--tu-orange-dark); font-size: 1.8em; }
+.reveal .api-actions { display: flex; flex-wrap:wrap; gap:8px; margin-top: 17px; }
+.reveal .api-actions span { font-size: .6em; background:var(--tu-pale); color:#56321c;
+  border-radius: 100px; padding: 9px 12px; white-space:nowrap; }
+
+/* Repository access flows */
+.reveal .pathway { margin-top: 1.2em; }
+.reveal .pathway-source { text-align: center; width: 55%; margin: 0 auto;
+  border-bottom: 4px solid var(--tu-orange); padding: 10px 0 18px; }
+.reveal .pathway-source strong { display:block; font-size: 1.35em; }
+.reveal .pathway-source .tiny { display:block; margin-top: 8px; }
+.reveal .pathway-split { height: 70px; display:flex; justify-content:center; }
+.reveal .pathway-line { width: 2px; height: 70px; background: var(--tu-orange); position:relative; }
+.reveal .pathway-line:after { content:''; position:absolute; height:2px; width:550px; background:var(--tu-orange); top:69px; left:-274px; }
+.reveal .pathway-destinations { display:grid; grid-template-columns:1fr 1fr; gap:70px; }
+.reveal .pathway-target { border-top: 2px solid #d8d8d8; padding-top: .5em; }
+.reveal .pathway-target-accent { border-color: var(--tu-orange); }
+.reveal .pathway-target strong { display:block; font-size: .91em; margin:.25em 0; }
+.reveal .pathway-target .tiny { display:block; }
+
+/* Manifest concept diagram */
+.reveal .two-col { display:grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.reveal .manifest-layout { align-items: center; margin-top: .4em; }
+.reveal .manifest-layout .col:first-child { font-size: .88em; }
+.reveal .manifest-layout .col:first-child ul { margin-top: .7em; }
+.reveal .manifest-visual { background: #fffaf4; border-top: 7px solid var(--tu-orange);
+  border-radius: 4px; padding: 24px 28px; box-shadow: 0 2px 14px #00000010; }
+.reveal .manifest-file { color: var(--tu-orange-dark); font-size: .86em; font-weight: 800; display:block; margin-bottom: 18px; }
+.reveal .manifest-file small { margin-left: 15px; background:#fff; padding:6px 8px; border-radius:3px; color:#555; }
+.reveal .manifest-row { display:flex; justify-content: space-between; border-bottom:1px solid #e5d9cb;
+  font-size:.7em; padding: 12px 0; gap:12px; }
+.reveal .manifest-row b { font-weight:650; }
+
+/* Research examples */
+.reveal .examples-three { display:grid; grid-template-columns: repeat(3,1fr); gap: 31px; margin-top:1em; }
+.reveal .example { border-top: 5px solid var(--tu-orange); padding: 19px 3px 10px 0; min-height: 340px; }
+.reveal .example h3 { min-height: 80px; font-size: .95em; }
+.reveal .example .example-index { color:var(--tu-muted); text-transform:uppercase; font-size:.55em; letter-spacing:.06em; }
+.reveal .example-stat { font-size:1.05em; color:var(--tu-orange-dark); font-weight:750; }
+.reveal .example-format { color:#666; font-size:.57em; border:1px solid #ddd; padding:5px 8px; border-radius:3px; }
+.reveal .example p { font-size:.7em; min-height: 130px; line-height:1.36; }
+.reveal a.small-link { font-size:.67em; font-weight:700; }
+.reveal .example + .example { border-left:1px solid #eee; padding-left: 16px; }
+
+/* Practical process */
+.reveal .steps-horizontal { display:grid; grid-template-columns:1fr 40px 1fr 40px 1fr;
+  gap:15px; margin-top:2em; align-items:start; }
+.reveal .step-item { border-top:3px solid var(--tu-orange); padding-top: .8em; min-height: 230px; }
+.reveal .step-item p { font-size:.76em; }
+.reveal .step-item h3 { margin-top:.25em; }
+.reveal .step-number { display:inline-flex; background:var(--tu-orange); border-radius:50%;
+  height:45px; width:45px; align-items:center; justify-content:center; color:#fff; font-size:.75em; font-weight:750; }
+.reveal .step-arrow { color:var(--tu-orange); text-align:center; padding-top:2.7em; font-size:1.5em; }
+.reveal .emphasis-statement { margin-top:2em; padding:18px 0; border-top:1px solid var(--tu-rule);
+  color:var(--tu-orange-dark); font-size:.9em; font-weight:700; }
+
+/* Features / tool ecosystem */
+.reveal .capabilities { display:grid; grid-template-columns: 1fr 1fr; gap: 16px 58px; margin-top:1.2em; }
+.reveal .capability { display:flex; gap:16px; align-items:center; border-bottom: 1px solid var(--tu-rule);
+  padding-bottom:14px; font-size:.83em; }
+.reveal .capability-glyph { display:inline-flex; justify-content:center; align-items:center;
+  color: var(--tu-orange-dark); font-size: 1.35em; width:40px; flex:none; }
+.reveal .tool-groups { display:grid; grid-template-columns: 1fr 1fr; gap:56px; }
+.reveal .tool-group { border-top:5px solid var(--tu-orange); padding-top: .7em; }
+.reveal .tool-group ul { margin-top:.55em; font-size:.76em; line-height:1.4; }
+.reveal .tool-group li { margin: .42em 0; }
+
+/* Benefits and use cases */
+.reveal .benefit-triad { display:grid; grid-template-columns: repeat(3,1fr); gap:42px; margin-top:1.6em; }
+.reveal .benefit-block { border-top: 4px solid var(--tu-orange); padding-top: .75em; }
+.reveal .benefit-block h3 { font-size:1.25em; }
+.reveal .benefit-number { color:var(--tu-orange-dark); font-size:.66em; font-weight:750; }
+.reveal .benefit-block p { font-size:.79em; line-height:1.38; }
+.reveal .usecases { display:grid; grid-template-columns:1fr 1fr; gap: 25px 55px; margin-top:1.1em; }
+.reveal .usecase { border-top:1px solid var(--tu-rule); padding-top:17px; font-size:.88em; }
+.reveal .usecase-mark { color:var(--tu-orange-dark); font-weight:750; margin-right:13px; }
+.reveal .usecase .muted { display:block; margin:10px 0 0 47px; font-size:.76em; }
+
+/* File preparation and best practices */
+.reveal .file-choice { display:grid; grid-template-columns:1fr 1fr; gap:58px; margin-top:1.4em; }
+.reveal .file-good, .reveal .file-bad { border-top: 5px solid var(--tu-orange); padding-top:.7em; }
+.reveal .file-bad { border-color:#b6b6b6; }
+.reveal .file-choice h3 { min-height: 46px; font-size:1.05em; }
+.reveal .format-chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; min-height:85px; }
+.reveal .format-chips span { display:inline-block; background:var(--tu-pale); color:#63361d;
+  font-size:.65em; padding:8px 10px; height:max-content; border-radius: 2px; }
+.reveal .file-choice .file-explain { display:block; font-size:.76em; margin-top:16px; line-height:1.35; }
+.reveal .zip-label { display:block; background:#eee; color:#6a6a6a; font-size:.81em;
+  width:max-content; margin:18px 0 33px; padding:12px 16px; font-family:monospace; }
+.reveal .checklist-columns { display:grid; grid-template-columns: 1fr 1fr; gap:54px; margin-top:1em; }
+.reveal .checklist-column ul { margin:0; list-style:none; }
+.reveal .checklist-column li { font-size:.85em; line-height:1.38; margin: 0 0 1.1em; padding-left: 33px; position:relative; }
+.reveal .checklist-column li:before { content:'✓'; position:absolute; left:0; top:-1px; color:var(--tu-orange-dark); font-weight:750; }
+.reveal .checklist-column input[type=checkbox] { display:none; }
+.reveal .checklist-column li.task-list-item { padding-left:33px; }
+
+/* Limits + close */
+.reveal .limitations { display:grid; gap: 18px; margin:1.25em 0 .5em; }
+.reveal .limitation { display:flex; align-items:center; gap:20px; border-bottom:1px solid #e9e9e9;
+  padding-bottom:11px; font-size:.86em; }
+.reveal .limitation span { color:var(--tu-orange-dark); font-weight:850; font-size:1.15em; }
+.reveal .closing-headline { font-size:1.33em; max-width:890px; margin-top:1.3em; line-height:1.35; }
+.reveal .contact-line { margin-top:1.7em; font-size:1.05em; }
+.reveal .closing-instruction { max-width:920px; color:#555; font-size:.81em; margin-top:1.5em; }
+.reveal .closing-links { margin-top: 2em; font-size:.68em; }
+
+/* Allow progressive reveal without affecting the column layout */
+.reveal .fragment:not(.visible) { opacity:0; }
+
+/* Optional high-contrast monochrome print output */
+@media print {
+  .reveal .slides section { padding: 30px 45px; }
+  .reveal a { text-decoration: underline; }
+}
