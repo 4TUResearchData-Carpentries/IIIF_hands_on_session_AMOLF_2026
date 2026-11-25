@@ -1,8 +1,12 @@
 # IIIF research workflow — local JupyterLab with `uv`
 
+## Collaborative document 
 
+[https://edu.nl/68cfc](https://edu.nl/68cfc)
 
+## Slides
 
+Slides are found in : 
 
 ## Setup (Windows PowerShell, macOS Terminal, or Linux shell)
 

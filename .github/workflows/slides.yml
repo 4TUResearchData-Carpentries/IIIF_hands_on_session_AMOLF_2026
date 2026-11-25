@@ -3,7 +3,7 @@ name: Build and publish slides
 on:
   push:
     paths:
-      - "Lesson_development/Presentations/**"
+      - "iiif-quarto-deck/**"
       - ".github/workflows/slides.yml"
   # Re-publish the slides after the lesson site has been rebuilt (see notes below)
   workflow_run:
@@ -24,7 +24,7 @@ jobs:
       cancel-in-progress: false
     defaults:
       run:
-        working-directory: Lesson_development/Presentations
+        working-directory: iiif-quarto-deck
     steps:
       - uses: actions/checkout@v4
 
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: slides
-          path: Lesson_development/Presentations/_site
+          path: iiif-quarto-deck/_site
 
       # main only: publish into the slides/ folder of the gh-pages branch
       - name: Publish to /slides/
@@ -48,6 +48,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: Lesson_development/Presentations/_site
+          publish_dir: iiif-quarto-deck/_site
           destination_dir: slides
           keep_files: true
