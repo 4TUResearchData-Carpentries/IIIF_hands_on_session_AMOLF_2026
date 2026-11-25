@@ -15,7 +15,7 @@ No local installation is required.
 
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/4TUResearchData-Carpentries/IIIF_hands_on_session_AMOLF_2026/main?urlpath=lab)
 
-## Setup (Windows PowerShell, macOS Terminal, or Linux shell)
+## Local setup (Windows PowerShell, macOS Terminal, or Linux shell)
 
 ### . Project and Environment Setup
 
