@@ -64,7 +64,7 @@ Leila Iñigo de la Cruz
 ## Retrieve and view the images **directly in a browser** without downloading them first.
 
 ::: {.fragment}
-![](images/iiif_approach.png){width=82%}{.center}
+![](images/iiif_approach.png){width=82%}
 ::: 
 
 
