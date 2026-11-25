@@ -1,7 +1,6 @@
 project:
   type: default
   output-dir: _site
-  # copied as-is into the built site (the brand fonts used by fonts.css)
   render:
-    - slides/index.qmd
-
+    - index.qmd
+    - iiif-4tu-introduction.qmd
