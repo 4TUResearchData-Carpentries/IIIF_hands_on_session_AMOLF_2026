@@ -17,7 +17,7 @@ No local installation is required.
 
 ## Local setup (Windows PowerShell, macOS Terminal, or Linux shell)
 
-### . Project and Environment Setup
+### Project and Environment Setup
 
 Create a course working directory somewhere convenient, for example your home directory, and then download the course environment file.
 
