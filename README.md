@@ -6,7 +6,14 @@
 
 ## Slides
 
-Slides are found in : 
+Slides are found [here](https://4turesearchdata-carpentries.github.io/IIIF_hands_on_session_AMOLF_2026/slides/iiif-4tu-introduction.html#/make-your-image-datasets-easier-to-view-and-reuse)  
+
+## Hands-on session
+
+Launch the interactive JupyterLab environment.
+No local installation is required.
+
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/4TUResearchData-Carpentries/IIIF_hands_on_session_AMOLF_2026/main?urlpath=lab)
 
 ## Setup (Windows PowerShell, macOS Terminal, or Linux shell)
 
