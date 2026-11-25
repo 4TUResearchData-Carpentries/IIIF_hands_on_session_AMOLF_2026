@@ -1,12 +1,10 @@
 ---
-
 pagetitle: "Introduction to IIIF and 4TU.ResearchData"
 output-file: iiif-4tu-introduction.html
 format:
   revealjs:
     theme: default
     css: styles.css
-
 ---
 
 
