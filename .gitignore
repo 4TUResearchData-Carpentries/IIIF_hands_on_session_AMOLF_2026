@@ -7,3 +7,5 @@ __pycache__/
 iiif-quarto-deck/_site
 iiif-quarto-deck/.quarto
 iiif-quarto-deck/index_files
+/.quarto/
+**/*.quarto_ipynb

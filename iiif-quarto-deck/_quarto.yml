@@ -3,24 +3,5 @@ project:
   output-dir: _site
   # copied as-is into the built site (the brand fonts used by fonts.css)
   render:
-    - "iiif-4tu-introduction.qmd"
+    - slides/index.qmd
 
-format:
-  revealjs:
-    theme: simple
-    css: styles.css
-    width: 1280
-    height: 720
-    margin: 0.045
-    slide-number: c/t
-    transition: fade
-    transition-speed: fast
-    center: false
-    controls: true
-    progress: true
-    hash: true
-    slide-level: 2
-    footer: "4TU.ResearchData · IIIF for image datasets"
-    link-external-newwindow: true
-execute:
-  echo: false
